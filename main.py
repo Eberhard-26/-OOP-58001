@@ -1,36 +1,16 @@
-import tkinter
-from tkinter import *
-from tkinter import ttk
-window = Tk()
+# This is a sample Python script.
 
-window.geometry("300x400+10+20")
-window.title("Python")
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-label=Label(window,text = "Welcome to PyCharm CE!", fg = "white", bg = "black")
-label.place(x=70, y=40)
 
-entry=Entry(window, bd = 2)
-entry.place(x=55, y=70)
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
-button=Button(window, text = "Start", fg = "black", font = ("Verdana", 16))
-button.place(x=110, y=100)
 
-v1=IntVar()
-radiobutton1 = Radiobutton(window, text= "Admin", variable = v1 ,value = 1)
-radiobutton2 = Radiobutton(window, text= "Guest", variable = v1 ,value = 2)
-radiobutton1.place(x=115, y=150)
-radiobutton2.place(x=115, y=180)
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
 
-v2=StringVar()
-v2.set('User 1')
-data1 = "User 1", "User 2", "User 3"
-combo = ttk.Combobox(window, values=data1)
-combo.place(x=48, y = 230)
-
-data = "Info", "Details", "Description"
-lb = Listbox(window, height=3, selectmode="multiple")
-for num in data:
-    lb.insert(END, num)
-lb.place(x=61, y=280)
-
-window.mainloop()
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
